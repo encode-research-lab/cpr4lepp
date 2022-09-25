@@ -1,0 +1,9 @@
+from passenger_wsgi import app
+from flask import render_template
+
+
+#decorated function
+@app.route('/')
+@app.route('/landing-page')
+def index():
+    return render_template('landing-page.html', current_title='Landing page')
