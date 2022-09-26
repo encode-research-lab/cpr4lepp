@@ -7,6 +7,9 @@
     <title>cpr4llp - {% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='base.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     {% block style %}
     {% endblock %}
 </head>
@@ -14,10 +17,10 @@
     <div class="navbar">
         <div class="logo"><img src="https://plsadaptive.s3.amazonaws.com/eco/images/channel_content/images/cshub-logo-lg_1.png" alt=""></div>
         <div class="route-element">
-            <a class="nav-link" href="{{ url_for('homeVN') }}"><i class="fa fa-fw fa-home"></i>&nbsp;Home page</a> 
-            <a class="nav-link" href="{{ url_for('aboutVN') }}"><i class="fa fa-fw fa-envelope"></i>&nbsp;About page</a> 
-            <a class="nav-link" href="#"><i class="fa fa-fw fa-search"></i>&nbsp;Search</a> 
-            <a class="nav-link" href="#"><i class="fa fa-fw fa-user"></i>&nbsp;Login</a>
+            <a class="nav-link active" href="{{ url_for('homeVN') }}"><span><i class="fa fa-fw fa-home"></i>&nbsp;Home page</span></a> 
+            <a class="nav-link" href="{{ url_for('aboutVN') }}"><span><i class="fa fa-fw fa-envelope"></i>&nbsp;About page</span></a> 
+            <a class="nav-link" href="#"><span><i class="fa fa-fw fa-search"></i>&nbsp;Search</span></a> 
+            <a class="nav-link" href="#"><span><i class="fa fa-fw fa-user"></i>&nbsp;Login</span></a>
         </div>
     </div>
     

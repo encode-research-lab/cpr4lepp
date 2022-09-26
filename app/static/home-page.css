@@ -5,25 +5,27 @@
     padding: .6rem;
 }
 
-.left-container{
-    width: 70%;
+.container-child{
     height: fit-content;
     background-color: whitesmoke;
     box-shadow: 10px 10px 5px #aaaaaa;
+    border: 1px solid darkgray;
+}
+
+.left-container{
+    width: 75%;
 }
 
 .right-container{
     width: 25%;
-    height: fit-content;
-    background-color: whitesmoke;
-    box-shadow: 10px 10px 5px #aaaaaa;
+    margin-left: 10px;
 }
 
 .first-div-container{
-    width: 100%;
+    width: 90%;
     height: fit-content;
     display: block;
-    margin-bottom: 50px;
+    margin: 50px auto;
     padding: .7rem;
 }
 
@@ -51,6 +53,13 @@
     display: flex;
     justify-content: space-around;
     padding: .7rem;
+    background-color: rgb(185 176 176 / 30%);
+}
+
+.carousel.slide{
+    width: 100%;
+    padding: 10px;
+    background-color: #006747;
 }
 
 @media screen and (max-width: 1300px) {
@@ -58,6 +67,29 @@
         width: 100px;
         height: 90px;
     }
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        display: block;
+    }
+    .right-container{
+        width: 90%;
+        margin: 30px auto;
+    }
+    .left-container{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .second-div-img{
+        width: 90px;
+        height: 80px;
+    }
+    /* .right-container div img{
+        width: 100px;
+        height: 90px;
+    } */
 }
 
 @media screen and (max-width: 950px){
@@ -78,12 +110,16 @@
     .second-div-element:nth-child(n+3){
         order: 1;
     }
+    .second-div-img{
+        width: 130px;
+        height: 110px;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    .right-container{
+    /* .right-container{
         display: none;
-    }
+    } */
     .left-container{
         width: 100%;
     }
@@ -96,5 +132,11 @@
     }
     .first-div-right{
         width: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container {
+        width: fit-content;
     }
 }

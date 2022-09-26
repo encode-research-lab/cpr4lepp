@@ -5,10 +5,16 @@
   display: flex;
   justify-content: space-between;
 }
+.navbar::before, .navbar::after{
+  content: none !important;
+}
+
+.navbar .logo{
+  margin-left: 20px;
+}
 
 .navbar .route-element {
   display: flex;
-  height: 100%;
 }
 
 .navbar .route-element .nav-link {
@@ -16,10 +22,12 @@
   padding: 12px;
   color: white;
   font-size: 17px;
-  height: 50px;
+  height: 100%;
   width: 150px;
   background-color: dimgray;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar .route-element .nav-link:hover {
@@ -28,6 +36,24 @@
 
 .navbar .route-element .nav-link.active {
   background-color: #04AA6D;
+}
+
+@media screen and (max-width: 850px) {
+  .navbar{
+    display: block;
+  }
+  .navbar .route-element{
+    display: grid;
+  }
+  .navbar .route-element .nav-link {
+    float: left;
+    width: auto;
+  }
+
+  .navbar .logo {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -61,6 +87,9 @@ h1{
   display: flex;
   justify-content: space-between;
 }
+.footer .footer-right{
+  line-height: 4rem;
+}
 
 .footer .footer-left p a:link{
   background-color: transparent;
@@ -68,11 +97,11 @@ h1{
   text-decoration: none;
 }
 
-.footer .footer-left p a:visited {
+/* .footer .footer-left p a:visited {
   color: blue;
   background-color: transparent;
   text-decoration: none;
-}
+} */
 .footer .footer-left p a:hover {
   color: pink;
   background-color: transparent;
@@ -90,11 +119,11 @@ h1{
   text-decoration: none;
 }
 
-.footer .footer-right p a:visited {
+/* .footer .footer-right p a:visited {
   color: blue;
   background-color: transparent;
   text-decoration: none;
-}
+} */
 .footer .footer-right p a:hover {
   color: pink;
   background-color: transparent;
@@ -107,20 +136,24 @@ h1{
 }
 
 .footer .footer-middle{
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
+  line-height: 4rem;
 }
 
 
 @media screen and (max-width: 850px) {
   .footer{
     padding: 3.5em 4rem 3rem 4rem;
+    font-size: 13px;
+    line-height: 2rem;
   }
 }
 
 @media screen and (max-width: 500px) {
   .footer{
     padding: 3em 1.5em 3em;
+    font-size: 11px;
+    line-height: 1rem;
   }
 }
 
