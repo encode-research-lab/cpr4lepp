@@ -96,8 +96,6 @@ def disclaimer(country):
 
 @app.route('/<country>/topic/<topic_name>', methods=['GET'])
 def topic(country, topic_name):
-    print(data.topic[country][0]);
-    print(topic_name)
     return render_template(
         data.topicPage[country][topic_name]['template'],
         current_title=data.topicPage[country][topic_name]['current_title'],

@@ -5,7 +5,7 @@
 {% endblock %}
 {% block main %}
 <div class="homepage-container">
-    
+
     <div class="main-img">
         <img src="{{ url_for('static', filename='photo/homepage_big_img.jpg')}}" alt="" class="main-img-element">
     </div>
@@ -36,7 +36,7 @@
                         <h1 class="title">{{ k.name }}</h1>
                         <h2 class="sub_title">The city that never sleeps.</h2>
                         <p class="description">{{ k.description }}</p>
-                        <a class="card-btn" type="button" href="{{ url_for('topic', country='vn', topic_name='{}'.format(k.name)) }}">{{ k.btn }}</a>
+                        <a class="card-btn" type="button" href="{{ url_for('topic', country='spain', topic_name='{}'.format(k.name)) }}">{{ k.btn }}</a>
                     </div>
                 </div>
                 {% endfor %}
