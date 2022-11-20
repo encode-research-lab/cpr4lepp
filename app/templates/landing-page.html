@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cpr4llp</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='landing-page.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing-page.css') }}"/>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icon/favicon.ico') }}">
 </head>
 <body>
     <h1 class="welcome-title">Welcome to cpr4llp</h1>
@@ -20,37 +21,19 @@
                             <h3 class="card-header-title">Viet Nam</h3>
                             <p class="card-header-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
                         </div>
-                        <a href="{{ url_for('homeVN') }}"><button class="choose-language">Choose</button></a>
+                        <a href="{{ url_for('home', country = 'vn') }}"><button class="choose-language">Choose</button></a>
                     </div>
                 </div>
               
+               
+
                 <div class="column">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-header-title">Laos</h3>
+                            <h3 class="card-header-title">Spain</h3>
                             <p class="card-header-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
                         </div>
-                        <a href="{{ url_for('homeLao') }}"><button class="choose-language">Choose</button></a>
-                    </div>
-                </div>
-                
-                <div class="column">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-header-title">Cambodia</h3>
-                            <p class="card-header-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
-                        </div>
-                        <a href="{{ url_for('homeCam') }}"><button class="choose-language">Choose</button></a>
-                    </div>
-                </div>
-                
-                <div class="column">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-header-title">China</h3>
-                            <p class="card-header-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
-                        </div>
-                        <a href="{{ url_for('homeChina') }}"><button class="choose-language">Choose</button></a>
+                        <a href="{{ url_for('home', country = 'spain') }}"><button class="choose-language">Choose</button></a>
                     </div>
                 </div>
             </div>  
