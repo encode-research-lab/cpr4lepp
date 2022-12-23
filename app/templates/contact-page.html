@@ -1,0 +1,89 @@
+{% extends "base-all.html" %}
+{% block title %}Contact page{% endblock %}
+{% block style %}
+	<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='css/contact-page.css') }}"/>
+{% endblock %}
+{% block main %}
+<div class="container">
+    <div class="most-asked">
+        <ul class="list">
+            {% for article in articles %}
+            <li class="list-ele">
+                <a href="{{ 
+                    url_for('article', country='{}'.format(current_country),
+                            topic_name='{}'.format(article.url.split('/')[2]),
+                            article_name='{}'.format(article.id)) 
+                }}">
+                    <div class="list-ele-container">
+                        <div class="list-ele-left">
+                            <img class="list-ele-left-img" src="{{ url_for('static', filename='{}'.format(article.image)) }}" alt="" width="250" height="150">
+                        </div>
+                        <div class="list-ele-right">
+                            <h2 class="list-ele-right-text title">{{ article.name }}</h2>
+                            <p class="list-ele-right-text text">{{ article.description }}</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h2 class="">Still need help?</h2>
+        <button type="button" class="btn-contact-us" data-toggle="modal" data-target="#contactForm">
+            Contact us
+        </button> 
+
+        <div class="modal"  id="contactForm" >
+            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+            <form id="contact" method="POST" action="https://script.google.com/macros/s/AKfycbx3nIBybax96rI2YLTX3q3_mdRkwpsqTcf0HirArETCoD1faOn6eyDzmwYd12Lf6k1LXg/exec" target="dummyframe">
+                <fieldset>
+                    <input id="email" name="Email" type="email" placeholder="{{email_placeholder}}" required>
+                </fieldset>
+                <fieldset>
+                    <textarea id="description" name="Description" type="text" placeholder="{{description_placeholder}}" required></textarea>
+                </fieldset>
+                <fieldset class="fieldset-btn">
+                    <button type="submit" id="contact-submit">{{ btn_submit_form }}</button>
+                    <button type="button" id="contact-close" onclick="onClose()">Close</button>
+                </fieldset>
+            </form>
+        </div>
+        
+
+        <h3 class="contact-time-title">Contact times (Pacific Time)</h3>
+        <div class="contact-time">
+            <div class="contact-phone">
+                <i data-icon-name="Phone" aria-hidden="true" class="fa fa-phone"></i>
+                <div class="phone-info">
+                    <h4 class="">Phone support</h4>
+                    <span class="">Monday to Friday: 6:00am-5:00pm</span>
+                    <span class="">Saturday to Sunday: 6:00am-5:00pm</span>
+                </div>
+            </div>
+            <div class="contact-email">
+                <i data-icon-name="Email" aria-hidden="true" class="fa fa-envelope"></i>
+                <div class="email-info">
+                    <h4 class="">Email contact</h4>
+                    <span class="">Monday to Sunday: 24 hours a day</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function onClose(){
+        document.getElementById("email").value = null;
+        document.getElementById("description").value = null;
+        document.getElementById("contactForm").style.display = "none";
+        document.getElementById("contactForm").style.removeProperty('padding-right');
+        document.getElementById("contactForm").classList.remove("in");
+        document.querySelector(".modal-backdrop.in").remove();
+        document.body.removeAttribute("class");
+        document.body.removeAttribute("style");
+    }
+</script>
+{% endblock %}
+

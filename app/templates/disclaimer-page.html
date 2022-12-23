@@ -1,0 +1,16 @@
+{% extends "base-all.html" %}
+{% block title %}Disclaimer page{% endblock %}
+{% block style %}
+	<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='css/disclaimer-page.css') }}"/>
+{% endblock %}
+{% block main %}
+<div class="container">
+    <h3>{{content.last_updated}}</h3>
+    {% for i in content.child %}
+        <h2>{{ i.title }}</h2>
+        {% for j in i.text %}
+            <p>{{j}}</p>
+        {% endfor %}
+    {% endfor %}
+</div>
+{% endblock %}

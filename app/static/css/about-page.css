@@ -1,0 +1,123 @@
+.about-column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+.info{
+    color: #b0bad0;
+}
+.about-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.about-container {
+    padding: 0 16px;
+}
+
+.about-container::after, .about-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.about-title {
+    color: grey;
+}
+
+@media screen and (max-width: 650px) {
+    .about-column {
+        width: 100%;
+        display: block;
+    }
+}
+
+#map {
+    height: 250px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.leaflet-bottom.leaflet-right{
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 20px auto;
+}
+.number-container {
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #21242b;
+}
+i.icon {
+    color: #04AA6D;
+    font-size: 2.7em;
+    text-align: center;
+}
+span.num {
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+}
+span.text {
+    color: #e0e0e0;
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+}
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        width: 85vw;
+    }
+    .number-container {
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .number-container {
+        width: calc(50% - 40px);
+        height: 30vmin;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .wrapper {
+        gap: 15px;
+    }
+    .number-container {
+        width: 100%;
+        height: 25vmin;
+        font-size: 8px;
+    }
+}

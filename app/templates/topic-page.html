@@ -1,0 +1,30 @@
+{% extends "base-all.html" %}
+{% block title %}Topic page{% endblock %}
+{% block style %}
+	<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='css/topic-page.css') }}"/>
+{% endblock %}
+{% block main %}
+<div class="container">
+    <ul class="list">
+        {% for article in articles %}
+        <li class="list-ele">
+            <a href="{{ 
+                url_for('article', country='{}'.format(current_country),
+                        topic_name='{}'.format(current_topic_name),
+                        article_name='{}'.format(article.id)) 
+            }}">
+                <div class="list-ele-container">
+                    <div class="list-ele-left">
+                        <img class="list-ele-left-img" src="{{ url_for('static', filename='{}'.format(article.image)) }}" alt="" width="250" height="150">
+                    </div>
+                    <div class="list-ele-right">
+                        <h2 class="list-ele-right-text title">{{ article.name }}</h2>
+                        <p class="list-ele-right-text text">{{ article.description }}</p>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

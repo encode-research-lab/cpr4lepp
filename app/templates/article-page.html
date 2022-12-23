@@ -1,0 +1,66 @@
+{% extends "base-all.html" %}
+{% block title %}Article page{% endblock %}
+{% block style %}
+	<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='css/article-page.css') }}"/>
+{% endblock %}
+{% block main %}
+<div class="container">
+    {% for article in articles %}
+        <h2>#{{ article.part_title }}</h2>
+        {% for i in article.part_text %}
+            {% if i[0] == "text"%}
+                <p>{{i[1]}}</p>
+            {% endif %}
+            {% if i[0] == "image"%}
+                <figure>
+                    <img class="article-img" src="{{ url_for('static', filename='{}'.format(i[1])) }}" alt="" srcset="">
+                    <figcaption>
+                        Some note about this image
+                    </figcaption>
+                </figure>
+            {% endif %}
+            {% if i[0] == "video"%}
+            <iframe src="https://www.youtube.com/embed/{{i[1]}}" style="width: 80%; aspect-ratio: 2/1;"></iframe>
+            {% endif %}
+        {% endfor %}
+        {% for i in article.part_children %}
+            <h3>*{{i.part_title}}</h3>
+            {% for j in i.part_text %}
+                {% if j[0] == "text"%}
+                    <p>{{j[1]}}</p>
+                {% endif %}
+                {% if j[0] == "image"%}
+                    <figure>
+                        <img class="article-img" src="{{ url_for('static', filename='{}'.format(j[1])) }}" alt="" srcset="">
+                        <figcaption>
+                            Some note about this image
+                        </figcaption>
+                    </figure>
+                {% endif %}
+                {% if j[0] == "video"%}
+                <iframe src="https://www.youtube.com/embed/{{j[1]}}" style="width: 80%; aspect-ratio: 2/1;"></iframe>
+                {% endif %}
+            {% endfor%}
+            {% for j in i.part_children %}
+                <h4>>{{ j.part_title }}</h4>
+                {% for k in j.part_text %}
+                    {% if k[0] == "text"%}
+                        <p>{{k[1]}}</p>
+                    {% endif %}
+                    {% if k[0] == "image"%}
+                        <figure>
+                            <img class="article-img" src="{{ url_for('static', filename='{}'.format(k[1])) }}" alt="" srcset="">
+                            <figcaption>
+                                Some note about this image
+                            </figcaption>
+                        </figure>
+                    {% endif %}
+                    {% if k[0] == "video"%}
+                    <iframe src="https://www.youtube.com/embed/{{k[1]}}" style="width: 80%; aspect-ratio: 2/1;"></iframe>
+                    {% endif %}
+                {% endfor %}
+            {% endfor%}
+        {% endfor %}    
+    {% endfor %}
+</div>
+{% endblock %}

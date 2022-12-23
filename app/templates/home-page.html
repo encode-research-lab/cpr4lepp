@@ -1,0 +1,62 @@
+{% extends "base-all.html" %}
+{% block title %}Home page{% endblock %}
+{% block style %}
+	<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='css/home-page.css') }}"/>
+{% endblock %}
+{% block main %}
+<div class="homepage-container">
+    
+    <div class="main-img">
+        <img src="{{ url_for('static', filename='photo/cyber-security.png')}}" alt="" class="main-img-element">
+    </div>
+
+    <div class="topic">
+        <div class="slider">
+            <div class="slides">
+                {% for k in topics %}
+                <a href="{{ url_for('topic', country='{}'.format(current_country), topic_name='{}'.format(k.id)) }}">
+                    <div class="grid__item">
+                        <div class="card">
+                            <img class="card__img" src="{{ url_for('static', filename='{}'.format(k.img))}}" width="150" height="100" alt="">
+                            <div class="card__content">
+                                <h2 class="card__header">{{ k.name }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+  
+        </div>
+    </div>
+
+    <div class="email-form">
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+        <form id="contact" method="POST" action="https://script.google.com/macros/s/AKfycbx3nIBybax96rI2YLTX3q3_mdRkwpsqTcf0HirArETCoD1faOn6eyDzmwYd12Lf6k1LXg/exec" target="dummyframe">
+            <fieldset>
+                <input id="email" name="Email" type="email" placeholder="{{email_placeholder}}"required>
+            </fieldset>
+            <fieldset>
+                <textarea id="description" name="Description" type="text" placeholder="{{description_placeholder}}" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button type="submit" id="contact-submit">{{ btn_submit_form }}</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- <iframe src="https://www.youtube.com/embed/eI4an8aSsgw" style="width: 100%; aspect-ratio: 2/1;">
+    </iframe> -->
+    
+    
+</div>
+<script>
+    var form = document.getElementById("contact");
+    document.getElementById("contact-submit").addEventListener("click", function () {
+        form.submit();
+        alert('{{ alert_title }}');
+        document.getElementById('email').value = '';
+        document.getElementById('description').value = '';
+    });
+</script>
+{% endblock %}

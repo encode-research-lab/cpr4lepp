@@ -1,0 +1,23 @@
+figure{
+    text-align: center;
+}
+iframe{
+    transform: translate(10%,0);
+    margin: 10px auto;
+}
+.article-img{
+    max-width: 800px;
+}
+
+@media screen and (min-width: 1250px) {
+    .article-img{
+        width: 100%;
+        height: 50%;
+    }
+}
+@media screen and (max-width: 1249px) {
+    .article-img{
+        width: 80%;
+        height: 40%;
+    }
+}

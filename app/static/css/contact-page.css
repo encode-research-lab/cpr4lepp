@@ -1,0 +1,248 @@
+.list{
+    list-style-type: none;
+    box-shadow: 0px 1px 8px #9f9d9d;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-ele-container{
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 1px 8px #9f9d9d;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 20px;
+    max-width: 530px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.list-ele-right-text{
+    color: black;
+}
+
+.title{
+    font-size: 26px;
+    font-weight: 600;
+}
+.text {
+    font-size: 16px;
+    font-weight: 400;;
+}
+
+@media screen and (max-width: 1200px){
+    .list{
+        justify-content: center;
+    }
+    .list-ele-left-img{
+        width: 200px;
+        height: 100px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .text{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .title{
+        font-size: 16px;
+    }
+    .text{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 700px){
+    .list-ele-left-img{
+        width: 160px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 500px){
+    .list-ele{
+        width: 100%;
+    }
+    .list-ele-container{
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .list-ele-left-img{
+        width: 220px;
+        height: 120px;
+    }
+}
+@media screen and (max-width: 360px){
+    .list-ele-left-img{
+        width: 100%;
+        /* height: 100px; */
+    }
+}
+
+#contactForm{
+    position: fixed;
+    /* display: block; */
+}
+
+.contact{
+    box-shadow: 0px 1px 8px #9f9d9d;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-contact-us{
+    cursor: pointer;
+    width: fit-content;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+.fieldset-btn{
+    display: flex;
+    justify-content: center;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+#contact button[type="button"] {
+    cursor: pointer;
+    width: 50%;
+    border: none;
+    background: #4191bf;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 1100px) {
+    #contact {
+        width: 600px;
+    }
+}
+@media screen and (max-width: 1250px){
+    .slider {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .slider {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #contact {
+        width: 90%;
+    }
+    .main-img .main-img-element{
+        display: none;
+    }
+    .slider {
+        width: 270px;
+    }
+    .fieldset-btn{
+        display: block;
+    }
+    #contact button[type="button"], #contact button[type="submit"] {
+        width: 100%;
+    }
+    
+}
+
+.contact-time{
+    display: flex;
+    
+}
+
+.contact-phone, .contact-email{
+    width: 50%;
+}
+
+.fa{
+    font-size: 25px;
+}
+
+.phone-info > span{
+    display: block;
+    margin: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .contact-time{
+        display: block;
+        text-align: center;
+    }
+    .contact-phone, .contact-email{
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+
+h3{
+    white-space: normal;
+    font-size: 20px;
+}

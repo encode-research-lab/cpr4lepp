@@ -1,0 +1,10 @@
+{% extends "base-all.html" %}
+{% block title %}Research page{% endblock %}
+{% block style %}
+	<link type="text/css"  rel="stylesheet" href="{{ url_for('static', filename='css/about-page.css') }}"/>
+{% endblock %}
+{% block main %}
+<div class="container">
+    <h1>Here is {{ current_country }} Research page</h1>
+</div>
+{% endblock %}
