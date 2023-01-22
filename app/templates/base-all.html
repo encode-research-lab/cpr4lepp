@@ -19,58 +19,87 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="logo"><a href="{{ url_for('index') }}"><img src="https://plsadaptive.s3.amazonaws.com/eco/images/channel_content/images/cshub-logo-lg_1.png" alt=""></a></div>
-        <div class="route-element">
-            {% for k in nav %}
-            <a class="nav-link {{ k.status_text }}" href="{{ url_for( k.link, country='{}'.format(current_country)) }}"><span><i class="{{ k.icon }}"></i>&nbsp;{{ k.page_title }}</span></a>
-            {% endfor %}
+        <div class="logo">
+            <a href="{{ url_for('index') }}"><img src="https://plsadaptive.s3.amazonaws.com/eco/images/channel_content/images/cshub-logo-lg_1.png" alt=""></a>
+            <button type="button" class="btn-toggle" onclick="handleClick()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="route">
+            <div class="route-element">
+                {% for k in nav %}
+                    <a class="nav-link {{ k.status_text }}" href="{{ url_for( k.link, country='{}'.format(current_country)) }}">
+                        <span>
+                            <i class="{{ k.icon }}"></i>&nbsp;{{ k.page_title }}
+                        </span>
+                    </a>
+                {% endfor %}
+            </div>
         </div>
     </div>
     
-    <h1>{{ current_title }}</h1>
+    
+    <!-- <h1 class="page-title">{{ current_title }}</h1> -->
     {% block main %}
     {% endblock %}
 
     <footer class="footer">
-        <div class="footer-ele footer-left">
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <div class="icon">
-                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <div class="icon">
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="face face1">
-                    <div class="content">
-                        <div class="icon">
-                            <i class="fa fa-github-square" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-ele footer-center">
-            <div class="footer-center-container">
-                <a class="footer-center-ele" href="{{ disclaimer_link }}" target="_blank" rel="noopener">{{ disclaimer_title }}</a><br>
-                <a class="footer-center-ele" href="tel:+0123 456 789">0123 456 789</a><br>
-                <a class="footer-center-ele" href="mailto:testmail@gmail.com">testmail@gmail.com</a>
-            </div>
-        </div>
-        <div class="footer-ele footer-right">
+        <div class="footer-left">
+            <a href="{{ url_for('index') }}" class="footer-left-link">
+                <img class="footer-left-link-logo" src="https://plsadaptive.s3.amazonaws.com/eco/images/channel_content/images/cshub-logo-lg_1.png" alt="">
+            </a>
             <p class="footer-copyright">{{ copyright }} © 2022 cpr4lepp</p>
         </div>
+        <div class="footer-right">
+            <div class="footer-right-container">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <div class="icon">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <div class="icon">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <div class="icon">
+                                <i class="fa fa-github-square" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="footer-right-ele" href="{{ disclaimer_link }}" target="_blank" rel="noopener">{{ disclaimer_title }}</a><br>
+            <a class="footer-right-ele" href="tel:+0123 456 789">0123 456 789</a><br>
+            <a class="footer-right-ele" href="mailto:testmail@gmail.com">testmail@gmail.com</a>
+        </div>
     </footer>
+    <script>
+        var isToggle = true;
+        window.addEventListener("resize", () => {
+            if(window.innerWidth>=850){
+                const toggles = document.querySelectorAll('.nav-link');
+                isToggle = true;
+                toggles.forEach(toggle => toggle.style.display = 'flex');    
+            }
+        })
+        function handleClick(){
+            isToggle = !isToggle
+            const toggles = document.querySelectorAll('.nav-link');
+            toggles.forEach(toggle => toggle.style.display = isToggle? 'grid' : 'none');
+        }
+    </script>
 </body>
 </html>

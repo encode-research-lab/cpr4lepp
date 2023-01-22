@@ -13,70 +13,25 @@
 {% endblock %}
 {% block main %}
 <div class="container">
-    <div class="about-section">
-        <p class="info">Some text about who we are and what we do.</p>
-        <p class="info">Resize the browser window to see that this page is responsive by the way.</p>
-    </div>
-    
-    <h2 style="text-align:center">Our Team</h2>
-
-    <div class="wrapper">
-        <!-- <div class="number-container">
-            <i class="fas fa-utensils"></i>
-            <span class="num" data-val="400">000</span>
-            <span class="text">Meals Delivered</span>
-        </div> -->
-        <div class="number-container">
-            <i class="fa fa-user-circle icon"></i>
-            <span class="num" data-val="340">000</span>
-            <span class="text">Happy Customers</span>
+    <h1 class="page-title">{{ current_title }}</h1>
+    {% for i in content.doctor %}
+    <div class="faculty-member">
+        <div class="faculty-basic-info">
+            <h2 class="faculty-title-info">{{i.name}}</h2>
+            <span class="faculty-place-info">{{i.place}}</span>
         </div>
-        <div class="number-container">
-            <i class="fa fa-list icon"></i>
-            <span class="num" data-val="225">000</span>
-            <span class="text">Menu Items</span>
-        </div>
-        <div class="number-container">
-            <i class="fa fa-star icon"></i>
-            <span class="num" data-val="280">000</span>
-            <span class="text">Five Stars</span>
-        </div>
-    </div>
-
-    <div class="about-row">
-        <div class="about-column">
-            <div class="about-card">
-                <img src="{{ url_for('static', filename='photo/team1.jpg') }}" alt="Jane" style="width:100%">
-                <div class="about-container">
-                    <h2>Jane Doe</h2>
-                    <p class="about-title">CEO & Founder</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                </div>
+        <div class="faculty-detail-info">
+            <div class="detail-left">
+                <img class="detail-img" src="{{ url_for('static', filename='{}'.format(i.img)) }}" alt="">
             </div>
-        </div>
-        
-        <div class="about-column">
-            <div class="about-card">
-                <img src="{{ url_for('static', filename='photo/team2.jpg') }}" alt="Jane" style="width:100%">
-                <div class="about-container">
-                    <h2>Mike Ross</h2>
-                    <p class="about-title">Art Director</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="about-column">
-            <div class="about-card">
-                <img src="{{ url_for('static', filename='photo/team3.jpg') }}" alt="Jane" style="width:100%">
-                <div class="about-container">
-                    <h2>John Doe</h2>
-                    <p class="about-title">Designer</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                </div>
+            <div class="detail-right">
+                {% for j in i.info %}
+                    <p>{{j}}</p>
+                {% endfor %}
             </div>
         </div>
     </div>
+    {% endfor %}
     
     <div id="map"></div>
 

@@ -5,9 +5,10 @@
 {% endblock %}
 {% block main %}
 <div class="container">
-    <h3>{{content.last_updated}}</h3>
+    <h1 class="page-title">{{ current_title }}</h1>
+    <h3 class="headings">{{content.last_updated}}</h3>
     {% for i in content.child %}
-        <h2>{{ i.title }}</h2>
+        <h2 class="headings">{{ i.title }}</h2>
         {% for j in i.text %}
             <p>{{j}}</p>
         {% endfor %}

@@ -1,6 +1,19 @@
+:root {
+    --mainTheme: #0067A0;
+    --mainColor: #FFFFFF;
+    --mainHoverColor: #065885;
+    --btnColor: #3363ff;
+    --btnColorActive: #6076c0;
+    --formBackground: #F9F9F9;
+    --inputBorder: #ccc;
+    --inputBackground: #FFFFFF;
+    --black: #000000;
+    --boxShadow: #9f9d9d;
+  }
+
 .list{
     list-style-type: none;
-    box-shadow: 0px 1px 8px #9f9d9d;
+    box-shadow: 0px 1px 8px var(--boxShadow);
     border-radius: 10px;
     margin: 20px auto;
     padding: 20px;
@@ -15,7 +28,7 @@
     flex: 50%;
     justify-content: center;
     gap: 20px;
-    box-shadow: 0px 1px 8px #9f9d9d;
+    box-shadow: 0px 1px 8px var(--boxShadow);
     width: fit-content;
     border-radius: 10px;
     margin: 10px;
@@ -97,17 +110,18 @@ a:hover{
 }
 
 .contact{
-    box-shadow: 0px 1px 8px #9f9d9d;
+    box-shadow: 0px 1px 8px var(--boxShadow);
     border-radius: 10px;
     margin: 20px auto;
     padding: 20px;
     width: 100%;
     text-align: center;
+    color: var(--mainHoverColor);
 }
 
 
 #contact {
-    background: #F9F9F9;
+    background: var(--formBackground);
     padding: 25px;
     box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
     width: 70%;
@@ -121,8 +135,8 @@ a:hover{
     cursor: pointer;
     width: fit-content;
     border: none;
-    background: #4CAF50;
-    color: #FFF;
+    background: var(--mainTheme);
+    color: var(--mainColor);
     margin: 0 0 5px;
     padding: 10px 15px;
     font-size: 15px;
@@ -138,8 +152,8 @@ fieldset {
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
     width: 100%;
-    border: 1px solid #ccc;
-    background: #FFF;
+    border: 1px solid var(--inputBorder);
+    background: var(--mainColor);
     margin: 0 0 5px;
     padding: 10px;
     font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
@@ -160,8 +174,8 @@ fieldset {
     cursor: pointer;
     width: 50%;
     border: none;
-    background: #4CAF50;
-    color: #FFF;
+    background: var(--mainTheme);
+    color: var(--mainColor);
     margin: 0 0 5px;
     padding: 10px;
     font-size: 15px;
@@ -170,8 +184,8 @@ fieldset {
     cursor: pointer;
     width: 50%;
     border: none;
-    background: #4191bf;
-    color: #FFF;
+    background: var(--btnColor);
+    color: var(--mainColor);
     margin: 0 0 5px;
     padding: 10px;
     font-size: 15px;

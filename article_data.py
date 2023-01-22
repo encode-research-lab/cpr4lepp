@@ -8,7 +8,7 @@ articlePage = {
                 'icon': 'fa fa-home',
             },
             {
-                'page_title':  "Về chúng tôi",
+                'page_title':  "Khoa",
                 'status_text': "",
                 'link': 'about',
                 'icon': 'fa fa-users',
@@ -1743,7 +1743,7 @@ articlePage = {
                 'link': 'home'
             },
             {
-                'page_title':  "About Us",
+                'page_title':  "Faculty",
                 'status_text': "",
                 'link': 'about'
             },

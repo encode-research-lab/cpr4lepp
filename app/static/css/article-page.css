@@ -1,3 +1,37 @@
+:root {
+    --mainTheme: #0067A0;
+    --mainColor: #FFFFFF;
+    --mainHoverColor: #065885;
+    --btnColor: #3363ff;
+    --btnColorActive: #6076c0;
+    --formBackground: #F9F9F9;
+    --inputBorder: #ccc;
+    --inputBackground: #FFFFFF;
+    --black: #000000;
+}
+
+.article-container{
+    text-align: justify;
+    word-spacing: -2px;
+}
+.headings{
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+}
+h2.headings{
+    margin: 30px 0;
+}
+h3.headings{
+    margin-top: 25px;
+    margin-bottom  : 15px;
+}
+h4.headings{
+    margin-top: 15px;
+    margin-bottom  : 10px;
+}
+
 figure{
     text-align: center;
 }

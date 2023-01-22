@@ -16,7 +16,7 @@ homePage = {
                 'icon': 'fa fa-home',
             },
             {
-                'page_title':  "Về chúng tôi",
+                'page_title':  "Khoa",
                 'status_text': "",
                 'link': 'about',
                 'icon': 'fa fa-users',
@@ -53,7 +53,7 @@ homePage = {
                 'icon': 'fa fa-home',
             },
             {
-                'page_title':  "About us",
+                'page_title':  "Faculty",
                 'status_text': "",
                 'link': 'about',
                 'icon': 'fa fa-users',
@@ -77,7 +77,7 @@ homePage = {
 aboutPage = {
     'vn': {
         'url': "/vn/about-page",
-        'current_title': "Về chúng tôi",
+        'current_title': "Khoa",
         'disclaimer_title': "Trách nhiệm pháp lý",
         'copyright': "Đăng ký bản quyền ",
         'nav_text': [
@@ -88,7 +88,7 @@ aboutPage = {
                 'icon': 'fa fa-home',
             },
             {
-                'page_title':  "Về chúng tôi",
+                'page_title':  "Khoa",
                 'status_text': "active",
                 'link': 'about',
                 'icon': 'fa fa-users',
@@ -106,11 +106,34 @@ aboutPage = {
                 'icon': 'fa fa-search',
             }
         ],
-        'content': {}
+        'content': {
+            'doctor': [
+                {
+                    'name': "Tiến sĩ Fawn Ngô",
+                    'place': 'College of Behavioral and Community Sciences. University of South Florida',
+                    'img': 'photo/team1.jpg',
+                    'info': [
+                        "Fawn T. Ngo is the Campus Chair of the College of Behavioral and Community Sciences. She's also an Associate Professor of Criminology at the University of South Florida Sarasota-Manatee campus. She received her B.A. in Criminology, Law and Society from the University of California at Irvine, her M.S. in Criminal Justice from the California State University at Long Beach, and her Ph.D. in Criminology and Criminal Justice from the University of Maryland. She worked as a Research Associate in the Research and Planning Unit at the Westminster Police Department in Orange County, California, and as the Associate Academic Director for the Master Criminal Justice Distance Learning Program at the University of Cincinnati.",
+                        "Dr. Ngo’s research areas include criminological theory, interpersonal violence, cyber crime, and predictive analytic applications in criminology and criminal justice. Her latest research focuses on the comparative performance of conventional statistical methods and machine learning and data mining techniques in predicting inmate misconduct. Her other publications examine gender differences in stalking acknowledgment and coping behaviors, the effectiveness of formal and informal responses to stalking, and stalking in same-sex and opposite-sex contexts. She has published several papers examining the efficacy of self-control theory, routine activity theory, differential social control theory, general strain theory, and gender/general strain theory in accounting for crime, delinquency, and victimization.",
+                        "Dr. Ngo is an evaluation consultant for Gulfcoast Legal Services, Inc., and Selah Freedom, Inc. She is also a member of the Editorial Board of the International Journal of Cyber Criminology, a member of the Advisory Committee of the Visitor Harassment Research Unit at Purdue University, and the USF Institutional Representative of the American Council on Education (ACE) Women’s Network of Florida.",
+                    ]
+                },
+                {
+                    'name': "Tiến sĩ Fawn Ngô",
+                    'place': 'College of Behavioral and Community Sciences. University of South Florida',
+                    'img': 'photo/team1.jpg',
+                    'info': [
+                        "Fawn T. Ngo is the Campus Chair of the College of Behavioral and Community Sciences. She's also an Associate Professor of Criminology at the University of South Florida Sarasota-Manatee campus. She received her B.A. in Criminology, Law and Society from the University of California at Irvine, her M.S. in Criminal Justice from the California State University at Long Beach, and her Ph.D. in Criminology and Criminal Justice from the University of Maryland. She worked as a Research Associate in the Research and Planning Unit at the Westminster Police Department in Orange County, California, and as the Associate Academic Director for the Master Criminal Justice Distance Learning Program at the University of Cincinnati.",
+                        "Dr. Ngo’s research areas include criminological theory, interpersonal violence, cyber crime, and predictive analytic applications in criminology and criminal justice. Her latest research focuses on the comparative performance of conventional statistical methods and machine learning and data mining techniques in predicting inmate misconduct. Her other publications examine gender differences in stalking acknowledgment and coping behaviors, the effectiveness of formal and informal responses to stalking, and stalking in same-sex and opposite-sex contexts. She has published several papers examining the efficacy of self-control theory, routine activity theory, differential social control theory, general strain theory, and gender/general strain theory in accounting for crime, delinquency, and victimization.",
+                        "Dr. Ngo is an evaluation consultant for Gulfcoast Legal Services, Inc., and Selah Freedom, Inc. She is also a member of the Editorial Board of the International Journal of Cyber Criminology, a member of the Advisory Committee of the Visitor Harassment Research Unit at Purdue University, and the USF Institutional Representative of the American Council on Education (ACE) Women’s Network of Florida.",
+                    ]
+                },
+            ]
+        }
     },
     'spain': {
         'url': "/spain/about-page",
-        'current_title': "About page",
+        'current_title': "Faculty",
         'disclaimer_title': "Disclaimer",
         'copyright': "Copyright ",
         'nav_text': [
@@ -121,7 +144,7 @@ aboutPage = {
                 'icon': 'fa fa-home',
             },
             {
-                'page_title':  "About us",
+                'page_title':  "Faculty",
                 'status_text': "active",
                 'link': 'about',
                 'icon': 'fa fa-users',
@@ -139,7 +162,30 @@ aboutPage = {
                 'icon': 'fa fa-search',
             }
         ],
-        'content': {}
+        'content': {
+            'doctor': [
+                {
+                    'name': "Dr. Fawn Ngo",
+                    'place': 'College of Behavioral and Community Sciences. University of South Florida',
+                    'img': 'photo/team1.jpg',
+                    'info': [
+                        "Fawn T. Ngo is the Campus Chair of the College of Behavioral and Community Sciences. She's also an Associate Professor of Criminology at the University of South Florida Sarasota-Manatee campus. She received her B.A. in Criminology, Law and Society from the University of California at Irvine, her M.S. in Criminal Justice from the California State University at Long Beach, and her Ph.D. in Criminology and Criminal Justice from the University of Maryland. She worked as a Research Associate in the Research and Planning Unit at the Westminster Police Department in Orange County, California, and as the Associate Academic Director for the Master Criminal Justice Distance Learning Program at the University of Cincinnati.",
+                        "Dr. Ngo’s research areas include criminological theory, interpersonal violence, cyber crime, and predictive analytic applications in criminology and criminal justice. Her latest research focuses on the comparative performance of conventional statistical methods and machine learning and data mining techniques in predicting inmate misconduct. Her other publications examine gender differences in stalking acknowledgment and coping behaviors, the effectiveness of formal and informal responses to stalking, and stalking in same-sex and opposite-sex contexts. She has published several papers examining the efficacy of self-control theory, routine activity theory, differential social control theory, general strain theory, and gender/general strain theory in accounting for crime, delinquency, and victimization.",
+                        "Dr. Ngo is an evaluation consultant for Gulfcoast Legal Services, Inc., and Selah Freedom, Inc. She is also a member of the Editorial Board of the International Journal of Cyber Criminology, a member of the Advisory Committee of the Visitor Harassment Research Unit at Purdue University, and the USF Institutional Representative of the American Council on Education (ACE) Women’s Network of Florida.",
+                    ]
+                },
+                {
+                    'name': "Dr. Fawn Ngo",
+                    'place': 'College of Behavioral and Community Sciences. University of South Florida',
+                    'img': 'photo/team1.jpg',
+                    'info': [
+                        "Fawn T. Ngo is the Campus Chair of the College of Behavioral and Community Sciences. She's also an Associate Professor of Criminology at the University of South Florida Sarasota-Manatee campus. She received her B.A. in Criminology, Law and Society from the University of California at Irvine, her M.S. in Criminal Justice from the California State University at Long Beach, and her Ph.D. in Criminology and Criminal Justice from the University of Maryland. She worked as a Research Associate in the Research and Planning Unit at the Westminster Police Department in Orange County, California, and as the Associate Academic Director for the Master Criminal Justice Distance Learning Program at the University of Cincinnati.",
+                        "Dr. Ngo’s research areas include criminological theory, interpersonal violence, cyber crime, and predictive analytic applications in criminology and criminal justice. Her latest research focuses on the comparative performance of conventional statistical methods and machine learning and data mining techniques in predicting inmate misconduct. Her other publications examine gender differences in stalking acknowledgment and coping behaviors, the effectiveness of formal and informal responses to stalking, and stalking in same-sex and opposite-sex contexts. She has published several papers examining the efficacy of self-control theory, routine activity theory, differential social control theory, general strain theory, and gender/general strain theory in accounting for crime, delinquency, and victimization.",
+                        "Dr. Ngo is an evaluation consultant for Gulfcoast Legal Services, Inc., and Selah Freedom, Inc. She is also a member of the Editorial Board of the International Journal of Cyber Criminology, a member of the Advisory Committee of the Visitor Harassment Research Unit at Purdue University, and the USF Institutional Representative of the American Council on Education (ACE) Women’s Network of Florida.",
+                    ]
+                },
+            ]
+        }
     }
 }
 contactPage = {
@@ -156,7 +202,7 @@ contactPage = {
                 'icon': 'fa fa-home',
             },
             {
-                'page_title':  "Về chúng tôi",
+                'page_title':  "Khoa",
                 'status_text': "",
                 'link': 'about',
                 'icon': 'fa fa-users',
@@ -189,7 +235,7 @@ contactPage = {
                 'icon': 'fa fa-home',
             },
             {
-                'page_title':  "About us",
+                'page_title':  "Faculty",
                 'status_text': "",
                 'link': 'about',
                 'icon': 'fa fa-users',
@@ -224,7 +270,7 @@ researchPage = {
                 'icon': 'fa fa-home',
             },
             {
-                'page_title':  "Về chúng tôi",
+                'page_title':  "Khoa",
                 'status_text': "",
                 'link': 'about',
                 'icon': 'fa fa-users',
@@ -257,7 +303,7 @@ researchPage = {
                 'icon': 'fa fa-home',
             },
             {
-                'page_title':  "About us",
+                'page_title':  "Faculty",
                 'status_text': "",
                 'link': 'about',
                 'icon': 'fa fa-users',
@@ -291,7 +337,7 @@ disclaimerPage = {
                 'icon': 'fa fa-home',
             },
             {
-                'page_title':  "Về chúng tôi",
+                'page_title':  "Khoa",
                 'status_text': "",
                 'link': 'about',
                 'icon': 'fa fa-users',
@@ -351,7 +397,7 @@ disclaimerPage = {
                 'icon': 'fa fa-home',
             },
             {
-                'page_title':  "About us",
+                'page_title':  "Faculty",
                 'status_text': "",
                 'link': 'about',
                 'icon': 'fa fa-users',

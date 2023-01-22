@@ -1,3 +1,15 @@
+:root {
+    --mainTheme: #0067A0;
+    --mainColor: #FFFFFF;
+    --mainHoverColor: #065885;
+    --btnColor: #3363ff;
+    --btnColorActive: #6076c0;
+    --formBackground: #F9F9F9;
+    --inputBorder: #ccc;
+    --inputBackground: #FFFFFF;
+    --black: #000000;
+  }
+
 * {
     box-sizing: border-box;
 }
@@ -6,7 +18,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     height: 100%;
-    background-color: lavender;
+    background-color: var(--mainColor);
+    color: var(--mainTheme);
     margin: 0px;
 }
 .welcome-title, .welcome-describe{
@@ -17,7 +30,7 @@ body {
     margin-top: 2.5rem;
 }
 .welcome-title{
-    color: #23085A;
+    color: var(--mainHoverColor);
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.3rem;
@@ -36,7 +49,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 3rem 2rem;
-    background-color: cadetblue;
+    background-color: var(--mainTheme);
 }
 
 .column {
@@ -73,15 +86,15 @@ body {
     margin-bottom: 20px;
     border: solid 2px;
     border-radius: 7px;
-    background-color: royalblue;
+    background-color: var(--btnColorActive);
+    color: var(--mainColor);
     font-size: 20px;
     font-weight: 600;
-    box-shadow: 3px 5px 3px #b7b5b5;
+    box-shadow: 3px 5px 3px var(--inputBorder);
 }
 
 .choose-language:hover{
-    background-color: darkblue;
-    color: #f1f1f1;
+    background-color: var(--mainHoverColor);
 }
 
 

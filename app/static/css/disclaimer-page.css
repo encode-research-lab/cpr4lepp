@@ -1,3 +1,27 @@
+:root {
+    --mainTheme: #0067A0;
+    --mainColor: #FFFFFF;
+    --mainHoverColor: #065885;
+    --btnColor: #3363ff;
+    --btnColorActive: #6076c0;
+    --formBackground: #F9F9F9;
+    --inputBorder: #ccc;
+    --inputBackground: #FFFFFF;
+    --black: #000000;
+  }
+
+.container{
+    text-align: justify;
+    word-spacing: -2px;
+}
+
+.headings{
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+}
+
 h3{
     font-size: 15px;
     text-align: right;
