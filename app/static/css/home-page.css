@@ -368,3 +368,57 @@ fieldset {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+.twitter-container{
+    margin: 50px auto;
+}
+.twitter-title{
+    text-align: center;
+    font-weight: 600;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.twitter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.twitter-tweet{
+    max-width: 300px !important;
+    margin: 10px auto !important;
+}
+
+@media only screen and (max-width: 1400px) {
+    .twitter{
+        width: 90%;
+    }
+    .twitter-tweet{
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .twitter{
+        flex-direction: column;
+        width: 100%;
+    }
+    .twitter-tweet{
+        max-width: 550px !important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .twitter-tweet{
+        max-width: 400px !important;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .twitter-tweet{
+        max-width: 300px !important;
+    }
+}
