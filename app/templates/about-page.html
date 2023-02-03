@@ -34,7 +34,7 @@
     {% endfor %}
 
     <div class="mission-container">
-        <h2 class="">{{ content.ourMission.mission }}</h2>
+        <h2 class="about-h2">{{ content.ourMission.mission }}</h2>
         {% for i in content.ourMission.text %}
             <p>{{i}}</p>
         {% endfor %}
@@ -44,14 +44,14 @@
         {% for i in content.ourStrengths %}
         <div class="strength">
             <img class="strength-img" src="{{ url_for('static', filename='{}'.format(i.icon)) }}" alt="" srcset="">
-            <h3>{{i.title}}</h3>
+            <h3 class="about-h2">{{i.title}}</h3>
             <p>{{i.text}}</p>
         </div>
         {% endfor %}
     </div>
 
     <div class="values-container">
-        <h2 class="">{{ content.ourValues.value }}</h2>
+        <h2 class="about-h2">{{ content.ourValues.value }}</h2>
         {% for i in content.ourValues.text %}
             <p>{{i}}</p>
         {% endfor %}

@@ -94,6 +94,10 @@
     margin: 50px auto;
 }
 
+.about-h2{
+    color: var(--mainTheme);
+}
+
 @media screen and (max-width: 1200px) {
     .strengths-container{
         gap: 30px;
