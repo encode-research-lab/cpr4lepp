@@ -9,8 +9,23 @@
     <h3 class="headings">{{content.last_updated}}</h3>
     {% for i in content.child %}
         <h2 class="headings">{{ i.title }}</h2>
-        {% for j in i.text %}
-            <p>{{j}}</p>
+        {% for j in i.part_text %}
+            {% if j[0] == "text" %}
+                <p>{{j[1]}}</p>
+            {% endif %}
+            {% if j[0] == "img" %}
+                <figure class="img-container">
+                    <img class="img" src="{{ url_for('static', filename='{}'.format(j[1][1])) }}" alt="" srcset="">
+                    <figcaption>
+                        {{ j[1][0] }}
+                    </figcaption>
+                </figure>
+            {% endif %}
+            {% if j[0] == "video" %}
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/{{j[1]}}" style="width: 80%; aspect-ratio: 2/1;"></iframe>
+                </div>
+            {% endif %}
         {% endfor %}
     {% endfor %}
 </div>

@@ -109,24 +109,53 @@ aboutPage = {
         'content': {
             'doctor': [
                 {
-                    'name': "Tiến sĩ Fawn Ngô",
+                    'name': "Tiến sĩ Phương Ngô",
                     'place': 'College of Behavioral and Community Sciences. University of South Florida',
                     'img': 'photo/team1.jpg',
                     'info': [
-                        "Fawn T. Ngo is the Campus Chair of the College of Behavioral and Community Sciences. She's also an Associate Professor of Criminology at the University of South Florida Sarasota-Manatee campus. She received her B.A. in Criminology, Law and Society from the University of California at Irvine, her M.S. in Criminal Justice from the California State University at Long Beach, and her Ph.D. in Criminology and Criminal Justice from the University of Maryland. She worked as a Research Associate in the Research and Planning Unit at the Westminster Police Department in Orange County, California, and as the Associate Academic Director for the Master Criminal Justice Distance Learning Program at the University of Cincinnati.",
+                        "Ngô Thị Phương is the Campus Chair of the College of Behavioral and Community Sciences. She's also an Associate Professor of Criminology at the University of South Florida Sarasota-Manatee campus. She received her B.A. in Criminology, Law and Society from the University of California at Irvine, her M.S. in Criminal Justice from the California State University at Long Beach, and her Ph.D. in Criminology and Criminal Justice from the University of Maryland. She worked as a Research Associate in the Research and Planning Unit at the Westminster Police Department in Orange County, California, and as the Associate Academic Director for the Master Criminal Justice Distance Learning Program at the University of Cincinnati.",
                         "Dr. Ngo’s research areas include criminological theory, interpersonal violence, cyber crime, and predictive analytic applications in criminology and criminal justice. Her latest research focuses on the comparative performance of conventional statistical methods and machine learning and data mining techniques in predicting inmate misconduct. Her other publications examine gender differences in stalking acknowledgment and coping behaviors, the effectiveness of formal and informal responses to stalking, and stalking in same-sex and opposite-sex contexts. She has published several papers examining the efficacy of self-control theory, routine activity theory, differential social control theory, general strain theory, and gender/general strain theory in accounting for crime, delinquency, and victimization.",
                         "Dr. Ngo is an evaluation consultant for Gulfcoast Legal Services, Inc., and Selah Freedom, Inc. She is also a member of the Editorial Board of the International Journal of Cyber Criminology, a member of the Advisory Committee of the Visitor Harassment Research Unit at Purdue University, and the USF Institutional Representative of the American Council on Education (ACE) Women’s Network of Florida.",
                     ]
                 },
                 {
-                    'name': "Tiến sĩ Fawn Ngô",
+                    'name': "Tiến sĩ Phương Ngô",
                     'place': 'College of Behavioral and Community Sciences. University of South Florida',
                     'img': 'photo/team1.jpg',
                     'info': [
-                        "Fawn T. Ngo is the Campus Chair of the College of Behavioral and Community Sciences. She's also an Associate Professor of Criminology at the University of South Florida Sarasota-Manatee campus. She received her B.A. in Criminology, Law and Society from the University of California at Irvine, her M.S. in Criminal Justice from the California State University at Long Beach, and her Ph.D. in Criminology and Criminal Justice from the University of Maryland. She worked as a Research Associate in the Research and Planning Unit at the Westminster Police Department in Orange County, California, and as the Associate Academic Director for the Master Criminal Justice Distance Learning Program at the University of Cincinnati.",
+                        "Ngô Thị Phương is the Campus Chair of the College of Behavioral and Community Sciences. She's also an Associate Professor of Criminology at the University of South Florida Sarasota-Manatee campus. She received her B.A. in Criminology, Law and Society from the University of California at Irvine, her M.S. in Criminal Justice from the California State University at Long Beach, and her Ph.D. in Criminology and Criminal Justice from the University of Maryland. She worked as a Research Associate in the Research and Planning Unit at the Westminster Police Department in Orange County, California, and as the Associate Academic Director for the Master Criminal Justice Distance Learning Program at the University of Cincinnati.",
                         "Dr. Ngo’s research areas include criminological theory, interpersonal violence, cyber crime, and predictive analytic applications in criminology and criminal justice. Her latest research focuses on the comparative performance of conventional statistical methods and machine learning and data mining techniques in predicting inmate misconduct. Her other publications examine gender differences in stalking acknowledgment and coping behaviors, the effectiveness of formal and informal responses to stalking, and stalking in same-sex and opposite-sex contexts. She has published several papers examining the efficacy of self-control theory, routine activity theory, differential social control theory, general strain theory, and gender/general strain theory in accounting for crime, delinquency, and victimization.",
                         "Dr. Ngo is an evaluation consultant for Gulfcoast Legal Services, Inc., and Selah Freedom, Inc. She is also a member of the Editorial Board of the International Journal of Cyber Criminology, a member of the Advisory Committee of the Visitor Harassment Research Unit at Purdue University, and the USF Institutional Representative of the American Council on Education (ACE) Women’s Network of Florida.",
                     ]
+                },
+            ],
+            'ourMission': {
+                'mission': 'Sứ mạng của chúng tôi',
+                'text' : [
+                    'Our goal is to prevent and report cyber-crime due to limited awareness of cybersecurity methods among limited English proficiency users by educating and empowering older minority adults with critical cybersecurity skills.',
+                ]
+            },
+            'ourValues': {
+                'value': 'Giá trị của chúng tối',
+                'text' : [
+                    'Our goal is to prevent and report cyber-crime due to limited awareness of cybersecurity methods among limited English proficiency users by educating and empowering older minority adults with critical cybersecurity skills.'
+                ],           
+            },
+            'ourStrengths': [
+                {
+                    'icon': 'photo/idea.svg',
+                    'title': 'Lorem Ipsum is simply',
+                    'text': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                },
+                {
+                    'icon': 'photo/padlock.svg',
+                    'title': 'Lorem Ipsum is simply',
+                    'text': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                },
+                {
+                    'icon': 'photo/stellar.svg',
+                    'title': 'Lorem Ipsum is simply',
+                    'text': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
                 },
             ]
         }
@@ -184,6 +213,35 @@ aboutPage = {
                         "Dr. Ngo is an evaluation consultant for Gulfcoast Legal Services, Inc., and Selah Freedom, Inc. She is also a member of the Editorial Board of the International Journal of Cyber Criminology, a member of the Advisory Committee of the Visitor Harassment Research Unit at Purdue University, and the USF Institutional Representative of the American Council on Education (ACE) Women’s Network of Florida.",
                     ]
                 },
+            ],
+            'ourMission': {
+                'mission': 'Our Mission',
+                'text' : [
+                    'Our goal is to prevent and report cyber-crime due to limited awareness of cybersecurity methods among limited English proficiency users by educating and empowering older minority adults with critical cybersecurity skills.',
+                ]
+            },
+            'ourValues': {
+                'value': 'Our Values',
+                'text' : [
+                    'Our goal is to prevent and report cyber-crime due to limited awareness of cybersecurity methods among limited English proficiency users by educating and empowering older minority adults with critical cybersecurity skills.'
+                ],           
+            },
+            'ourStrengths': [
+                {
+                    'icon': 'photo/idea.svg',
+                    'title': 'Lorem Ipsum is simply',
+                    'text': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                },
+                {
+                    'icon': 'photo/padlock.svg',
+                    'title': 'Lorem Ipsum is simply',
+                    'text': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                },
+                {
+                    'icon': 'photo/stellar.svg',
+                    'title': 'Lorem Ipsum is simply',
+                    'text': "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                },
             ]
         }
     }
@@ -220,7 +278,16 @@ contactPage = {
                 'icon': 'fa fa-search',
             }
         ],
-        'content': {}
+        'form': {
+            'formTitle': 'Cần giúp đỡ?',
+            'formBtn':'Liên hệ',
+            'formContactTime': 'THỜI GIAN (GIỜ CỤ THỂ)',
+            'formPhoneSupport': 'HỖ TRỢ QUA ĐIỆN THOẠI',
+            'formPhoneTime1':'Thứ 2-Thứ 6: 6:00 sáng-5:00 chiều',
+            'formPhoneTime2':'Thứ 7-Chủ nhật: 6:00 sáng-5:00 chiều',
+            'formEmailSupport': 'HỖ TRỢ QUA EMAIL',
+            'formEmailTime': 'Thứ 2-Chủ nhật: Cả ngày',
+        }
     },
     'spain': {
         'url': "/spain/contact-page",
@@ -253,7 +320,16 @@ contactPage = {
                 'icon': 'fa fa-search',
             }
         ],
-        'content': {}
+        'form': {
+            'formTitle': 'STILL NEED HELP?',
+            'formBtn':'Contact us',
+            'formContactTime': 'CONTACT TIMES (PACIFIC TIME)',
+            'formPhoneSupport': 'PHONE SUPPORT',
+            'formPhoneTime1':'Monday to Friday: 6:00am-5:00pm',
+            'formPhoneTime2':'Saturday to Sunday: 6:00am-5:00pm',
+            'formEmailSupport': 'EMAIL CONTACT',
+            'formEmailTime': 'Monday to Sunday: 24 hours a day',
+        }
     }
 }
 researchPage = {
@@ -360,26 +436,31 @@ disclaimerPage = {
             'child': [
                 {
                     'title': 'WEBSITE DISCLAIMER',
-                    'text': [
-                        'The information provided by Termly.io (“we,” “us” or “our”) on https://termly.io (the “Site”) is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the Site. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.'
+                    'part_text': [
+                        ['text','The information provided by Termly.io (“we,” “us” or “our”) on https://termly.io (the “Site”) is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the Site. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.'],
+                        ['text','UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.'],
+                        ['img', ['This is the bird!','photo/article/Polinizacion_2_746x419.jpg']],
+                        ['video','_6Zhfts2iao'],
                     ]
                 },
                 {
                     'title': 'EXTERNAL LINKS DISCLAIMER',
-                    'text': [
-                        'The Site may contain (or you may be sent through the Site links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability or completeness by us. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR THE ACCURACY OR RELIABILITY OF ANY INFORMATION OFFERED BY THIRD-PARTY WEBSITES LINKED THROUGH THE SITE OR ANY WEBSITE OR FEATURE LINKED IN ANY BANNER OR OTHER ADVERTISING. WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.'
+                    'part_text': [
+                        ['text','Ok bro i made it!'],
                     ]
                 },
                 {
                     'title': 'PROFESSIONAL DISCLAIMER',
-                    'text': [
-                        'The Site cannot and does not contain legal advice. The legal information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of legal advice. THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THIS SITE IS SOLELY AT YOUR OWN RISK.'
+                    'part_text': [
+                        ['text','The Site cannot and does not contain legal advice. The legal information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of legal advice. THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THIS SITE IS SOLELY AT YOUR OWN RISK.'],
+                        ['img', ['This is the bird!','photo/article/Polinizacion_2_746x419.jpg']],
+                        ['video','kmU7uX3ZHJc'],
                     ]
                 },
                 {
                     'title': 'TESTIMONIALS DISCLAIMER',
-                    'text': [
-                        'The Site cannot and does not contain legal advice. The legal information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of legal advice. THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THIS SITE IS SOLELY AT YOUR OWN RISK.'
+                    'part_text': [
+                        ['text','The Site cannot and does not contain legal advice. The legal information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of legal advice. THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THIS SITE IS SOLELY AT YOUR OWN RISK.'],
                     ]
                 },
             ]
@@ -420,26 +501,31 @@ disclaimerPage = {
             'child': [
                 {
                     'title': 'WEBSITE DISCLAIMER',
-                    'text': [
-                        'The information provided by Termly.io (“we,” “us” or “our”) on https://termly.io (the “Site”) is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the Site. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.'
+                    'part_text': [
+                        ['text','The information provided by Termly.io (“we,” “us” or “our”) on https://termly.io (the “Site”) is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on the Site. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.'],
+                        ['text','UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK.'],
+                        ['img', ['This is the bird!','photo/article/Polinizacion_2_746x419.jpg']],
+                        ['video','_6Zhfts2iao'],
                     ]
                 },
                 {
                     'title': 'EXTERNAL LINKS DISCLAIMER',
-                    'text': [
-                        'The Site may contain (or you may be sent through the Site links to other websites or content belonging to or originating from third parties or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability or completeness by us. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR THE ACCURACY OR RELIABILITY OF ANY INFORMATION OFFERED BY THIRD-PARTY WEBSITES LINKED THROUGH THE SITE OR ANY WEBSITE OR FEATURE LINKED IN ANY BANNER OR OTHER ADVERTISING. WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.'
+                    'part_text': [
+                        ['text','Ok bro i made it!'],
                     ]
                 },
                 {
                     'title': 'PROFESSIONAL DISCLAIMER',
-                    'text': [
-                        'The Site cannot and does not contain legal advice. The legal information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of legal advice. THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THIS SITE IS SOLELY AT YOUR OWN RISK.'
+                    'part_text': [
+                        ['text','The Site cannot and does not contain legal advice. The legal information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of legal advice. THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THIS SITE IS SOLELY AT YOUR OWN RISK.'],
+                        ['img', ['This is the bird!','photo/article/Polinizacion_2_746x419.jpg']],
+                        ['video','kmU7uX3ZHJc'],
                     ]
                 },
                 {
                     'title': 'TESTIMONIALS DISCLAIMER',
-                    'text': [
-                        'The Site cannot and does not contain legal advice. The legal information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of legal advice. THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THIS SITE IS SOLELY AT YOUR OWN RISK.'
+                    'part_text': [
+                        ['text','The Site cannot and does not contain legal advice. The legal information is provided for general informational and educational purposes only and is not a substitute for professional advice. Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of legal advice. THE USE OR RELIANCE OF ANY INFORMATION CONTAINED ON THIS SITE IS SOLELY AT YOUR OWN RISK.'],
                     ]
                 },
             ]

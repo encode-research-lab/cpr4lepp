@@ -31,9 +31,9 @@
     </div>
 
     <div class="contact">
-        <h2 class="">Still need help?</h2>
+        <h2 class=""> {{ formSupport.formTitle }}</h2>
         <button type="button" class="btn-contact-us" data-toggle="modal" data-target="#contactForm">
-            Contact us
+            {{ formSupport.formBtn }}
         </button> 
 
         <div class="modal"  id="contactForm" >
@@ -53,21 +53,21 @@
         </div>
         
 
-        <h3 class="contact-time-title">Contact times (Pacific Time)</h3>
+        <h3 class="contact-time-title">{{ formSupport.formContactTime }}</h3>
         <div class="contact-time">
             <div class="contact-phone">
                 <i data-icon-name="Phone" aria-hidden="true" class="fa fa-phone"></i>
                 <div class="phone-info">
-                    <h4 class="">Phone support</h4>
-                    <span class="">Monday to Friday: 6:00am-5:00pm</span>
-                    <span class="">Saturday to Sunday: 6:00am-5:00pm</span>
+                    <h4 class="">{{ formSupport.formPhoneSupport }}</h4>
+                    <span class="">{{ formSupport.formPhoneTime1 }}</span>
+                    <span class="">{{ formSupport.formPhoneTime2 }}</span>
                 </div>
             </div>
             <div class="contact-email">
                 <i data-icon-name="Email" aria-hidden="true" class="fa fa-envelope"></i>
                 <div class="email-info">
-                    <h4 class="">Email contact</h4>
-                    <span class="">Monday to Sunday: 24 hours a day</span>
+                    <h4 class="">{{ formSupport.formEmailSupport }}</h4>
+                    <span class="">{{ formSupport.formEmailTime }}</span>
                 </div>
             </div>
         </div>

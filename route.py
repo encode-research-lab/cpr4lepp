@@ -72,7 +72,7 @@ def contact(country):
     return render_template(
         "./contact-page.html",
         current_title=data.contactPage[country]['current_title'],
-        content=data.contactPage[country]['content'],
+        formSupport=data.contactPage[country]['form'],
         current_country=country,
         nav=data.contactPage[country]['nav_text'],
         disclaimer_link=url_for('disclaimer', country=country),

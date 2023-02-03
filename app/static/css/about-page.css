@@ -54,6 +54,67 @@
 }
 
 
+/* Our mission */
+.mission-container{
+    width: 85%;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.strengths-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.strength{
+    width: 30%;
+    text-align: justify;
+    margin: 10px auto;
+
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    min-height: 200px;
+    border: 8px solid;
+    padding: 1rem;
+
+    border-image: linear-gradient(to left, var(--mainTheme), var(--mainTheme)) 1 0;
+}
+
+.strength-img{
+    width: 60%;
+    margin: 20px auto;
+}
+
+.values-container{
+    width: 85%;
+    text-align: center;
+    margin: 50px auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .strengths-container{
+        gap: 30px;
+    }
+    .strength{
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .strengths-container{
+        display: block;
+        text-align: center;
+    }
+    .strength{
+        width: 50%;
+        margin: 50px auto;
+    }
+}
+
+
 @media screen and (max-width: 650px){
     .faculty-detail-info{
         display: block;
@@ -68,5 +129,8 @@
     }
     .detail-right{
         width: 100%;
+    }
+    .strength{
+        width: 80%;
     }
 }
