@@ -1,5 +1,5 @@
 from passenger_wsgi import app
-from flask import render_template, request, render_template, redirect, url_for, send_from_directory
+from flask import render_template, request, redirect, url_for, send_from_directory
 from datetime import datetime
 import forms
 
