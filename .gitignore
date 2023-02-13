@@ -1,2 +1,4 @@
 *.pyc
 .env
+__pycache__/passenger_wsgi.cpython-37.pyc
+__pycache__/route.cpython-37.pyc
