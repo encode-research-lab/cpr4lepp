@@ -15,27 +15,63 @@
     <div class="landing-page">
         <div class="landing-page-container">
             <div class="row">
-                <div class="column">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-header-title">Tiếng Việt</h3>
-                            <p class="card-header-text">Chào mừng đến với website của Trung tâm cảnh báo và tố cáo lừa đảo trên mạng dành cho cộng đồng Việt Nam cần hỗ trợ giao tiếp bằng tiếng Anh. </p>
-                        </div>
-                        <a href="{{ url_for('home', country = 'vn') }}"><button class="choose-language">Trang chủ</button></a>
-                    </div>
-                </div>
-              
-               
 
                 <div class="column">
                     <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-header-title">Spanish</h3>
-                            <p class="card-header-text">Bienvenido al sitio web del Centro de denuncia y advertencia de fraude en línea para las comunidades vietnamitas que necesitan soporte de comunicación en inglés.</p>
-                        </div>
-                        <a href="{{ url_for('home', country = 'spain') }}"><button class="choose-language">Hogar</button></a>
+                        <img class="detail-img" src="{{ url_for('static', filename='photo/saigontrade88_create_a_visually_appealing_and_easily_recognizab_Ha_Long_Bay-removebg-preview.png') }}" alt="">
+                        <!-- <div class="card-header">
+                            <h3 class="card-header-title">Tiếng Việt</h3>
+                            <p class="card-header-text">Chào mừng đến với website của Trung tâm cảnh báo và tố cáo lừa đảo trên mạng dành cho cộng đồng Việt Nam cần hỗ trợ giao tiếp bằng tiếng Anh. </p>
+                        </div> -->
+                        <a href="{{ url_for('home', country = 'vn') }}"><button class="choose-language">Xin chào!</button></a>
                     </div>
                 </div>
+                <div class="column">
+                    <div class="card">
+                        
+                        <!-- <div class="card-header">
+                            <h3 class="card-header-title">Spanish</h3>
+                            <p class="card-header-text">Bienvenido al sitio web del Centro de denuncia y advertencia de fraude en línea para las comunidades vietnamitas que necesitan soporte de comunicación en inglés.</p>
+                        </div> -->
+                        <a href="{{ url_for('home', country = 'spain') }}"><button class="choose-language">¡Hola!</button></a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img class="detail-img" src="{{ url_for('static', filename='photo/saigontrade88_create_a_visually_appealing_and_easily_recognizab_Wat_Xieng_Thong-removebg-preview.png') }}" alt="">
+                        <!-- <div class="card-header">
+                            <h3 class="card-header-title">Laos</h3>
+                            <p class="card-header-text">Bienvenido al sitio web del Centro de denuncia y advertencia de fraude en línea para las comunidades vietnamitas que necesitan soporte de comunicación en inglés.</p>
+                        </div> -->
+                        <a href="{{ url_for('home', country = 'laos') }}"><button class="choose-language">ສະບາຍດີ!</button></a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img class="detail-img" src="{{ url_for('static', filename='photo/saigontrade88_create_a_visually_appealing_and_easily_recognizab_Ayutthaya_Thailand-removebg-preview.png') }}" alt="">
+                        <!-- <div class="card-header">
+                            <h3 class="card-header-title">Thai</h3>
+                            <p class="card-header-text">Bienvenido al sitio web del Centro de denuncia y advertencia de fraude en línea para las comunidades vietnamitas que necesitan soporte de comunicación en inglés.</p>
+                        </div> -->
+
+                        <a href="{{ url_for('home', country = 'thai') }}"><button class="choose-language">สวัสดี!</button></a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img class="detail-img" src="{{ url_for('static', filename='photo/Angkor_Wat-removebg-preview.png') }}" alt="">
+                        <!-- <div class="card-header">
+                            <h3 class="card-header-title">Thai</h3>
+                            <p class="card-header-text">Bienvenido al sitio web del Centro de denuncia y advertencia de fraude en línea para las comunidades vietnamitas que necesitan soporte de comunicación en inglés.</p>
+                        </div> -->
+
+                        <a href="{{ url_for('home', country = 'cambodia') }}"><button class="choose-language">សួស្តី!</button></a>
+                    </div>
+                </div>
+
             </div>  
         </div>
     </div>
